@@ -4,90 +4,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>웹 스터디 ::: 여상수</title>
+  <title>웹 스터디 ::: 장현수</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+    </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css" />
+  
+  
 </head>
 
 <body>
   <div id="head_title">
     <h1>웹화면 구현 수업의 웹스터디 페이지</h1>
-    <h2><!-- TODO: 자기이름을 써주세요--></h2>
+    <h2>장현수<!-- TODO: 자기이름을 써주세요--></h2>
     <p>
       안녕하세요!<br />
       <!-- TODO: 간단한 자기소개를 써주세요(1줄~2줄) -->
+      목원대학교 컴퓨터공학과 장현수입니다.
       <br /><br />
       <!-- FIXME: 폰트어썸에서 3개~5개 정도를 넣어주세요 -->
-      <i class="fa-brands fa-tiktok fa-2xl" style="color: #f20202"></i>
+      <i class="fa-solid fa-court-sport"></i>
       <i class="fa-brands fa-facebook fa-beat fa-2xl" style="color: #74c0fc"></i>
       <i class="fa-brands fa-facebook fa-2xl" style="color: #74c0fc"></i>
+      <i class="fa-duotone fa-t-rex fa-fade"></i>
+      <i class="fa-duotone fa-fire"></i>
+
     </p>
   </div>
-  <hr />
+  <hr/>
 
   <h1>애니메이션</h1>
 
   <!-- TODO: 애니메이션 속성으로 전환 효과 제어하기 p.250 -->
-
+  <div id="ani3">
+    애니메이션
+    
+  </div>
+  <button id="startBtn">start</button>
+  <button id="pauseBtn">paused</button>
+  <div id="trans5"></div>
 
   <!-- FIXME: 아래쪽 주석 삭제하기 -->
   
   <h1>flex-container</h1>
 
   <div class="flex-container">
+    <div class="flex-item">item-1</div>
+    <div class="flex-item">item-2</div>
+    <div class="flex-item">item-3</div>
+    <div class="flex-item">item-4</div>
+  </div>
+
+  <div class="flex-container">
     <!-- FIXME: 지금 예제를 대체하는 콘텐츠로, 영화 또는 드라마 콘텐츠 4개 작성 -->
     <div class="flex-item">
       <dl>
-        <dt>영화소개 : 듄2</dt>
+        <dt>잉글랜드 프리미어리그</dt>
         <dd>
-          <a target="_blank" href="https://namu.wiki/w/%EB%93%84:%20%ED%8C%8C%ED%8A%B8%202"><img
-              src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240207_151%2F1707288437263gBsdd_JPEG%2Fmovie_image.jpg"
+          <a target="_blank" href="https://namu.wiki/w/%ED%94%84%EB%A6%AC%EB%AF%B8%EC%96%B4%20%EB%A6%AC%EA%B7%B8?from=EPL"><img
+              src="https://i.namu.wiki/i/rRoCXdBKwHu3pddVwMCC6xCkA0u70jWeUKYze7Jx0iNdkLk3mK5xyblNQ11YM5LzRK_W2HYZqqeeKPLZKQYXNGcGzMrczTZfiZBsVBHyT-jy5GfYlEGWDC3mfV9rRm7WX6Rg5BNo4t7Lc6t8vCSZpg.svg"
               alt="" /></a>
-          2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
-          2021년 영화 〈듄〉의 속편이다.
+              영국 잉글랜드의 최상위 프로 축구 리그. 
+              다른 국가의 축구 리그와는 달리 축구 종주국으로 국가명을 따로 붙이지 않기에 
+              정식 명칭은 'Premier League'지만 편의상 타 리그와 구분을 위해 'PL'보단 앞에 
+              English의 E를 붙인 'EPL'로 쓰는 경우도 있다.
         </dd>
       </dl>
     </div>
-    <div class="flex-item">
+    <div class="flex-item" style="background-color: red;">
       <dl>
-        <dt>영화소개 : 냉정과 열정 사이</dt>
+        <dt>맨체스터 유나이티드</dt>
         <dd>
           <a target="_blank"
-            href="https://namu.wiki/w/%EB%83%89%EC%A0%95%EA%B3%BC%20%EC%97%B4%EC%A0%95%20%EC%82%AC%EC%9D%B4"><img
-              src="https://i.namu.wiki/i/nfVqC1FuFaC27Kf6J_wHxE858tdwwFyP_2wZo4qIIB1VxSnOF-PJ7NyHZz9uySo9bz3gc5lr4cJHAuWvT8QsLGh38N-b8ci42Ndh5hUgN7D_-abhZL8ZT35Jz3_dN2d8GAnVvx3RP3eeuSXfX3sxUw.webp"
+            href="https://namu.wiki/w/%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0%20%EC%9C%A0%EB%82%98%EC%9D%B4%ED%8B%B0%EB%93%9C%20FC#s-1"><img
+              src="https://i.namu.wiki/i/MgDrndOPtqlBfuB4UGOQqVU-N2tgV_PUw3BiJunYVVqL-RAEl_U1rw1sM2_9V16czWapaQDq9ZvjQMiD4r4z43xbg_2JyiEsKvzPQypKDikivj8UXE-LLp_pdMq5lzzDWCQkDLzNpwQWYo0-oQSEtg.svg"
               alt="" /></a><br />
-          2001년에 타케노우치 유타카, 진혜림 주연의 영화로 제작되었다.
-          타다이마 오카에리 엔딩의 전형적인 영화.
+              영국 잉글랜드 그레이터맨체스터 주의 트래포드[15]를 연고[16]로 하는 프로축구 구단이다. 뉴턴 히스 LYR F.C.(Newton Heath LYR F.C.)[17]라는 이름으로 창설되었다. 1902년 4월 26일 지금의 이름인 맨체스터 유나이티드 F.C.로 개칭[18]하였고, 1910년에는 홈 경기장을 맨체스터 시 동북쪽의 뱅크 스트리트[19]에서 서남쪽의 올드 트래포드로 이전했다.
+
+              잉글랜드 최초의 유러피언컵[20] 우승팀[21]이자, 잉글랜드 클럽 발롱도르 수상자 최다 배출[22], 그리고 현재 잉글랜드 최상위 프로 축구 리그 최다 우승팀[23][24]이자, 잉글랜드에서 최초로 트레블[25] 달성 기록을 보유하고 있는 구단이다. 하지만 알렉스 퍼거슨 감독이 떠난 이후 각종 문제가 곪아 터지며, 인기와 명성은 여전히 이어갈 지언정 현재는 상당히 몰락한 상황이다.
         </dd>
       </dl>
     </div>
 
-    <div class="flex-item">
+    <div class="flex-item" style="background-color: white; color: black;">
       <dl>
-        <dt>넷플릭스 소개: 삼체</dt>
+        <dt>토트넘 핫스퍼</dt>
         <dd>
           <a target="_blank"
-            href="https://namu.wiki/w/%EC%82%BC%EC%B2%B4%28%EB%AF%B8%EA%B5%AD%20%EB%93%9C%EB%9D%BC%EB%A7%88%29">
+            href="https://namu.wiki/w/%ED%86%A0%ED%8A%B8%EB%84%98%20%ED%99%8B%EC%8A%A4%ED%8D%BC%20FC">
             <img
-              src="https://i.namu.wiki/i/oX1oa1g4_3hjnOfbeiX1KlJ_pQfzE-BG1ydHvLl_PLAjq-UOOGbF4nL9j7Zq-Duua0zf_Thf__So00aDy_HqLz-9Tu-SKgMY9rj4yGk3rALLHD-VGx5IssQkwwu4v4G2ptTs6uvLoFdQwLGWQoEXGA.webp"
+              src="https://i.namu.wiki/i/1JZ44UjJ7hklpzECsqQK4aulpjWfh-9x9Il3hkzpmTu2BvcD-t6DNwgJBSzUp4YLvFe9JsecsNGIAX2e1kndMA.svg"
               alt="" /></a>
-          “물리학은 존재하지 않는다”라는 유서를 남기고 자살한 동료 과학자
-          '양둥'의 죽음이 석연치 않았던 '왕먀오'는 ...!
+              영국 잉글랜드의 프리미어 리그 소속 프로 축구단. 연고지는 런던, 홈구장은 토트넘 홋스퍼 스타디움이다.
+
+              애칭은 스퍼스(Spurs).[14] 1882년 창단되었으며, 토트넘에 소재하고 있는 화이트 하트 레인을 2017년 5월 14일까지 홈구장으로 사용했다.[15] 이후 2019년 4월 3일부터 같은 자리에 세워진 토트넘 홋스퍼 스타디움을 새로운 홈구장으로 사용하고 있다.
+              
+              프리미어 리그 최고 성적은 2016-17 시즌 2위, UEFA 챔피언스 리그 최고 성적은 2018-19 시즌의 준우승이며 UEFA 유로파 리그[16] 초대 우승팀이다. 또한 프리미어 리그 득점왕을 최다 배출한 클럽이다 (13번).
+              
+              엠블럼은 수평아리(싸움닭)가 축구공 위에 올라가 있는 형태를 하고 있다. 클럽의 모토는 라틴어인 'Audere EST Facere'로, 영어로는 'To Dare Is to Do', 한국어로는 '용감한 것은 도전하는 것이다'란 뜻이다.
         </dd>
       </dl>
     </div>
     </a>
-    <div class="flex-item">
+    <div class="flex-item" style="background-color: skyblue;">
       <dl>
-        <dt>영화소개 : 범죄도시4</dt>
+        <dt>맨체스터 시티</dt>
         <dd>
-          <a target="_blank" href="https://namu.wiki/w/%EB%B2%94%EC%A3%84%EB%8F%84%EC%8B%9C4"><img
-              src="https://i.namu.wiki/i/UV5cDIV4GTiR81tpwd8qsWzna_HaavSVxpgjwWoJgV9ydIbARV4-9_1KaBhQT8Esd20jCHUcgD8ZXm8pCJirRTIWeFbXs6xIGHFHDv6ywuWbDTk7X_afpPTjLXOltjfhNUDTSpaelAvhJsEU7wBSFA.webp"
+          <a target="_blank" href="https://namu.wiki/w/%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0%20%EC%8B%9C%ED%8B%B0%20FC"><img
+              src="https://i.namu.wiki/i/eMq-1aoUYbwhgKaoso79lqzg3_pjU7b64Q9WyCBmuQTY_OJ4L2leZty2XUPNM8le1nb7DEZqJEzksFz5TRbnXcR_piJcASMW0nzbNTOi9Ewktn9KF2L1s8WYlTFXWjtt9J3sZYNj7tWO4Z-4n4LW4g.svg"
               alt="" /></a>
-          2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
-          2021년 영화 〈듄〉의 속편이다.
+              영국 잉글랜드 프리미어 리그 소속 프로축구 클럽. 연고지는 그레이터맨체스터주 맨체스터. 홈 구장은 에티하드 스타디움.
+
+              영국 축구 역사상 최초이자 유일한 5관왕[18]과 잉글랜드 축구 역사상 유일한 리그 4연패[19] 및 도메스틱 트레블(Domestic Treble)[20]을 달성한 클럽이다. 특히 프리미어 리그 역대 최다 승점[21] 및 잉글랜드 축구 역사상 단 두 팀뿐인 트레블[22]의 기록을 보유하고 있다.
         </dd>
       </dl>
     </div>
@@ -151,7 +182,81 @@
       </dl>
     </div>
   </div>
+  <h1>화면설계 그리드</h1>
+  <div class="grid-layout">
+    <div class="gl-item" id= "header">헤더</div>
+    <div class="gl-item" id = "sidebar">사이드바</div>
+    <div class="gl-item" id = "content">콘텐츠
+      <div class="flex-container">
+        <!-- FIXME: 지금 예제를 대체하는 콘텐츠로, 영화 또는 드라마 콘텐츠 4개 작성 -->
+        <div class="flex-item">
+          <dl>
+            <dt>잉글랜드 프리미어리그</dt>
+            <dd>
+              <a target="_blank" href="https://namu.wiki/w/%ED%94%84%EB%A6%AC%EB%AF%B8%EC%96%B4%20%EB%A6%AC%EA%B7%B8?from=EPL"><img
+                  src="https://i.namu.wiki/i/rRoCXdBKwHu3pddVwMCC6xCkA0u70jWeUKYze7Jx0iNdkLk3mK5xyblNQ11YM5LzRK_W2HYZqqeeKPLZKQYXNGcGzMrczTZfiZBsVBHyT-jy5GfYlEGWDC3mfV9rRm7WX6Rg5BNo4t7Lc6t8vCSZpg.svg"
+                  alt="" /></a>
+                  영국 잉글랜드의 최상위 프로 축구 리그. 
+                  다른 국가의 축구 리그와는 달리 축구 종주국으로 국가명을 따로 붙이지 않기에 
+                  정식 명칭은 'Premier League'지만 편의상 타 리그와 구분을 위해 'PL'보단 앞에 
+                  English의 E를 붙인 'EPL'로 쓰는 경우도 있다.
+            </dd>
+          </dl>
+        </div>
+        <div class="flex-item" style="background-color: red;">
+          <dl>
+            <dt>맨체스터 유나이티드</dt>
+            <dd>
+              <a target="_blank"
+                href="https://namu.wiki/w/%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0%20%EC%9C%A0%EB%82%98%EC%9D%B4%ED%8B%B0%EB%93%9C%20FC#s-1"><img
+                  src="https://i.namu.wiki/i/MgDrndOPtqlBfuB4UGOQqVU-N2tgV_PUw3BiJunYVVqL-RAEl_U1rw1sM2_9V16czWapaQDq9ZvjQMiD4r4z43xbg_2JyiEsKvzPQypKDikivj8UXE-LLp_pdMq5lzzDWCQkDLzNpwQWYo0-oQSEtg.svg"
+                  alt="" /></a><br />
+                  영국 잉글랜드 그레이터맨체스터 주의 트래포드[15]를 연고[16]로 하는 프로축구 구단이다. 뉴턴 히스 LYR F.C.(Newton Heath LYR F.C.)[17]라는 이름으로 창설되었다. 1902년 4월 26일 지금의 이름인 맨체스터 유나이티드 F.C.로 개칭[18]하였고, 1910년에는 홈 경기장을 맨체스터 시 동북쪽의 뱅크 스트리트[19]에서 서남쪽의 올드 트래포드로 이전했다.
+    
+                  잉글랜드 최초의 유러피언컵[20] 우승팀[21]이자, 잉글랜드 클럽 발롱도르 수상자 최다 배출[22], 그리고 현재 잉글랜드 최상위 프로 축구 리그 최다 우승팀[23][24]이자, 잉글랜드에서 최초로 트레블[25] 달성 기록을 보유하고 있는 구단이다. 하지만 알렉스 퍼거슨 감독이 떠난 이후 각종 문제가 곪아 터지며, 인기와 명성은 여전히 이어갈 지언정 현재는 상당히 몰락한 상황이다.
+            </dd>
+          </dl>
+        </div>
+    
+        <div class="flex-item" style="background-color: white; color: black;">
+          <dl>
+            <dt>토트넘 핫스퍼</dt>
+            <dd>
+              <a target="_blank"
+                href="https://namu.wiki/w/%ED%86%A0%ED%8A%B8%EB%84%98%20%ED%99%8B%EC%8A%A4%ED%8D%BC%20FC">
+                <img
+                  src="https://i.namu.wiki/i/1JZ44UjJ7hklpzECsqQK4aulpjWfh-9x9Il3hkzpmTu2BvcD-t6DNwgJBSzUp4YLvFe9JsecsNGIAX2e1kndMA.svg"
+                  alt="" /></a>
+                  영국 잉글랜드의 프리미어 리그 소속 프로 축구단. 연고지는 런던, 홈구장은 토트넘 홋스퍼 스타디움이다.
+    
+                  애칭은 스퍼스(Spurs).[14] 1882년 창단되었으며, 토트넘에 소재하고 있는 화이트 하트 레인을 2017년 5월 14일까지 홈구장으로 사용했다.[15] 이후 2019년 4월 3일부터 같은 자리에 세워진 토트넘 홋스퍼 스타디움을 새로운 홈구장으로 사용하고 있다.
+                  
+                  프리미어 리그 최고 성적은 2016-17 시즌 2위, UEFA 챔피언스 리그 최고 성적은 2018-19 시즌의 준우승이며 UEFA 유로파 리그[16] 초대 우승팀이다. 또한 프리미어 리그 득점왕을 최다 배출한 클럽이다 (13번).
+                  
+                  엠블럼은 수평아리(싸움닭)가 축구공 위에 올라가 있는 형태를 하고 있다. 클럽의 모토는 라틴어인 'Audere EST Facere'로, 영어로는 'To Dare Is to Do', 한국어로는 '용감한 것은 도전하는 것이다'란 뜻이다.
+            </dd>
+          </dl>
+        </div>
+        </a>
+        <div class="flex-item" style="background-color: skyblue;">
+          <dl>
+            <dt>맨체스터 시티</dt>
+            <dd>
+              <a target="_blank" href="https://namu.wiki/w/%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0%20%EC%8B%9C%ED%8B%B0%20FC"><img
+                  src="https://i.namu.wiki/i/eMq-1aoUYbwhgKaoso79lqzg3_pjU7b64Q9WyCBmuQTY_OJ4L2leZty2XUPNM8le1nb7DEZqJEzksFz5TRbnXcR_piJcASMW0nzbNTOi9Ewktn9KF2L1s8WYlTFXWjtt9J3sZYNj7tWO4Z-4n4LW4g.svg"
+                  alt="" /></a>
+                  영국 잉글랜드 프리미어 리그 소속 프로축구 클럽. 연고지는 그레이터맨체스터주 맨체스터. 홈 구장은 에티하드 스타디움.
+    
+                  영국 축구 역사상 최초이자 유일한 5관왕[18]과 잉글랜드 축구 역사상 유일한 리그 4연패[19] 및 도메스틱 트레블(Domestic Treble)[20]을 달성한 클럽이다. 특히 프리미어 리그 역대 최다 승점[21] 및 잉글랜드 축구 역사상 단 두 팀뿐인 트레블[22]의 기록을 보유하고 있다.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div class="gl-item " id = "footer">푸터 </div>
 
+  </div>
+  <script src="./js/main.js" ></script>
 </body>
 
 </html>
